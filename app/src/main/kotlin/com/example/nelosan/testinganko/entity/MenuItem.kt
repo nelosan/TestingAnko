@@ -1,4 +1,4 @@
-package com.example.nelosan.testinganko
+package com.example.nelosan.testinganko.entity
 
 import android.support.v7.app.AppCompatActivity
 

@@ -1,8 +1,8 @@
-package com.example.nelosan.testinganko
+package com.example.nelosan.testinganko.activity
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import android.view.Gravity
+
 
 import org.jetbrains.anko.*
 

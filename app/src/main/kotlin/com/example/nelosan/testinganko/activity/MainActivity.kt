@@ -1,4 +1,4 @@
-package com.example.nelosan.testinganko
+package com.example.nelosan.testinganko.activity
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,6 +6,10 @@ import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.activity_main.*
 import android.support.v7.widget.DividerItemDecoration
+import com.example.nelosan.testinganko.adapter.MenuAdapter
+import com.example.nelosan.testinganko.entity.MenuItem
+import com.example.nelosan.testinganko.R
+
 
 
 /**
@@ -13,7 +17,7 @@ import android.support.v7.widget.DividerItemDecoration
  */
 class MainActivity : AppCompatActivity() {
 
-    val options: List<MenuItem> = mutableListOf(MenuItem("Create view with dsl", DSLActivity::class.java))
+    val options = createOptions()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,6 +27,13 @@ class MainActivity : AppCompatActivity() {
         list.adapter = MenuAdapter(options){
             startActivity(Intent(this, it.activity))
         }
+    }
+
+    fun createOptions(): List<MenuItem>{
+        return mutableListOf(
+                MenuItem("Create view with DSL", DSLActivity::class.java),
+                MenuItem("DSL component",  DSLComponentActivity::class.java)
+        )
     }
 
 }
