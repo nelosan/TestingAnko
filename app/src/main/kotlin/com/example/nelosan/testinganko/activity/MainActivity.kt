@@ -32,7 +32,8 @@ class MainActivity : AppCompatActivity() {
     fun createOptions(): List<MenuItem>{
         return mutableListOf(
                 MenuItem("Create view with DSL", DSLActivity::class.java),
-                MenuItem("DSL component",  DSLComponentActivity::class.java)
+                MenuItem("DSL component",  DSLComponentActivity::class.java),
+                MenuItem("Async task", AsyncTaskActivity::class.java)
         )
     }
 

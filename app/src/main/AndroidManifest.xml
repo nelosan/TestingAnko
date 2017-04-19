@@ -15,7 +15,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.AsynkActivity"></activity>
+        <activity android:name=".activity.AsyncTaskActivity"></activity>
         <activity android:name=".activity.DSLActivity"></activity>
         <activity android:name=".activity.DSLComponentActivity"></activity>
     </application>
