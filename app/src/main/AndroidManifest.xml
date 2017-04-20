@@ -18,6 +18,8 @@
         <activity android:name=".activity.AsyncTaskActivity"></activity>
         <activity android:name=".activity.DSLActivity"></activity>
         <activity android:name=".activity.DSLComponentActivity"></activity>
+        <activity android:name=".activity.IntentActivity"></activity>
+        <activity android:name=".activity.GetDataActivity"></activity>
     </application>
 
 </manifest>

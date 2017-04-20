@@ -33,7 +33,8 @@ class MainActivity : AppCompatActivity() {
         return mutableListOf(
                 MenuItem("Create view with DSL", DSLActivity::class.java),
                 MenuItem("DSL component",  DSLComponentActivity::class.java),
-                MenuItem("Async task", AsyncTaskActivity::class.java)
+                MenuItem("Async task", AsyncTaskActivity::class.java),
+                MenuItem("Intents", IntentActivity::class.java)
         )
     }
 
